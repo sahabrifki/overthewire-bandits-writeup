@@ -1,3 +1,11 @@
+----bandit0-----
 connect to bandit server from ssh with "ssh bandit@bandit.labs.overthewire.org -p2220"
 username : bandit0
 password : bandit0
+
+----bandit0-1-----
+- after connect from ssh with command line above , find for readme file with "ls"
+- ls
+- cat readme
+
+password : boJ9jbbUNNfktd78OOpsqOltutMc3MY1
