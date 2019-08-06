@@ -1,0 +1,1 @@
+connect to bandit server from ssh with "ssh bandit@bandit.labs.overthewire.org -p2220"
