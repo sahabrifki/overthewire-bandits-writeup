@@ -1,0 +1,58 @@
+----bandit0-----
+connect to bandit server from ssh with "ssh bandit@bandit.labs.overthewire.org -p2220"
+username : bandit0
+password : bandit0
+
+----bandit1-----
+- after connect from ssh with command line above , find for readme file with "ls"
+- ls
+- cat readme
+
+password : boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+
+---bandit 1 to 2 ----
+keyword : how to open dashed filename in terminal
+
+1. ls -a to find dashed file name
+2. use ./ to open dashed filename ($ cat ./-)
+3. flag is : CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+4. use this password to login next case
+
+---bandit 2 to 3 ----
+keyword : how to open spaces in this filename
+connect to ssh bandit2 to port 2220
+1. ls
+2. cat spaces\ in\ filename
+3 flag is : UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+--- bandit 3 to 4 ---
+use "ls -a" to show view all file & hidden file in directory from terminal
+1. "ls"
+2. cd inhere
+3."ls -a"
+4. cat .hidden
+flag : pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+--- bandit 4 to 5 ---
+1. "ls"
+2. cd inhere
+3. strigns ./-file0*
+4. flag : koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+--- bandit 5 to 6 ---
+keyword : how to use find command to find in all directory
+-- man find
+1. cd inhere
+2. to find in every directory with "find . -type f -readable -size 1033c"
+flag : DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+-- bandit 6 to 7 ---
+keyword : man find , using find to Find file owned by a group & user
+
+1. "find / -user bandit7 -group bandit6 -size 33c"
+2. looking for all listing and the uniq one which permission is not denied
+3. "cat /var/lib/dpkg/info/bandit7.password"
+4. flag : HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+
